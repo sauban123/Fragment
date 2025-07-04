@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Understanding Fragments\nConcept!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="#444444"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Horizontal layout for buttons -->
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ACA0A0"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="450dp"
+        android:id="@+id/framelayout"/>
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ACA0A0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clock"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg"
+            android:layout_margin="8dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnExam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg"
+            android:layout_margin="8dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnValidate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VALIDATE"
+            android:background="@drawable/bg"
+            android:textColor="#FFFFFF"
+            android:layout_margin="8dp"
+             />
+
+    </LinearLayout>
+
+</LinearLayout>
